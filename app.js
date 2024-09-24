@@ -1,3 +1,16 @@
+const burger = document.querySelector('.burger');
+const navigation = document.querySelector('.navigation')
+
+function showBurger() {
+    burger.style.display = "flex";
+    navigation.style.display = 'none';
+}
+function closeBurger() {
+    navigation.style.display = 'flex';
+    burger.style.display = "none";
+}
+
+
 let prevButton = document.getElementById('prev');
 let backButton = document.getElementById('back');
 let nextButton = document.getElementById('next');
@@ -32,6 +45,13 @@ const showSlider = (type) => {
         nextButton.style.pointerEvents = 'auto';
         prevButton.style.pointerEvents = 'auto';
     }, 2000)
+}
 
-
+seeMoreButton.forEach(button => {
+    button.onclick = function() {
+        carousel.classList.add('showDetail');
+    }
+})
+backButton.onclick = function(){
+    carousel.classList.remove('showDetail');
 }

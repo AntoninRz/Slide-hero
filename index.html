@@ -14,11 +14,28 @@
     
     <!-- Header -->
      <header>
-        <div class="logo">Dé-full</div>
         <nav>
-            <a href="">Home</a>
-            <a href="">Contact</a>
-            <a href="">info</a>
+            <div>
+                <h2>NavBar</h2>
+            </div>
+            <ul class="navigation">
+                <li class="hiddenOnMobil"><a href="#">Acceuil</a></li>
+                <li class="hiddenOnMobil"><a href="#">Service</a></li>
+                <li class="hiddenOnMobil"><a href="#">Localisation</a></li>
+                <li class="hiddenOnMobil"><a href="#">Blog</a></li>
+                <li class="hiddenOnMobil"><a href="#">Contact</a></li>
+                <li class="hiddenOnMobil"><a href="#">Voir +</a></li>
+                <li id="showMobil" onclick="showBurger()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="burger">
+                <li onclick="closeBurger()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Localisation</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Voir +</a></li>
+            </ul>
         </nav>
      </header>
 
@@ -72,8 +89,8 @@
                         </div>
                     </div>
                     <div class="checkout">
-                        <button>Add to cart</button>
-                        <button>Checkout</button>
+                        <button type="button">Add to cart</button>
+                        <button type="button">Checkout</button>
                     </div>
                 </div>
             </div>
